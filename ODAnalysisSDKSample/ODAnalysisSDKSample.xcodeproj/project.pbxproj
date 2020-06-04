@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D833EEF32474F7E20023ED44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D833EEF22474F7E20023ED44 /* AppDelegate.m */; };
+		D833EEF92474F7E20023ED44 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D833EEF82474F7E20023ED44 /* ViewController.m */; };
+		D833EEFC2474F7E20023ED44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D833EEFA2474F7E20023ED44 /* Main.storyboard */; };
+		D833EEFE2474F7E40023ED44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D833EEFD2474F7E40023ED44 /* Assets.xcassets */; };
+		D833EF012474F7E40023ED44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D833EEFF2474F7E40023ED44 /* LaunchScreen.storyboard */; };
+		D833EF042474F7E40023ED44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D833EF032474F7E40023ED44 /* main.m */; };
+		D833EF0B2474FA0C0023ED44 /* ODAEvent.plist in Resources */ = {isa = PBXBuildFile; fileRef = D833EF0A2474FA0C0023ED44 /* ODAEvent.plist */; };
+		D83DEA96247520A000F710F1 /* ODABaseInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83DEA94247520A000F710F1 /* ODABaseInfoViewController.m */; };
+		D83DEA9B247520BA00F710F1 /* ODARegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83DEA98247520B900F710F1 /* ODARegisterViewController.m */; };
+		D83DEA9C247520BA00F710F1 /* ODARegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D83DEA99247520B900F710F1 /* ODARegisterViewController.xib */; };
+		D83DEAA02475213700F710F1 /* ODADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83DEA9F2475213700F710F1 /* ODADetailViewController.m */; };
+		D83DEAA5247523B200F710F1 /* ODABaseInfoHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D83DEAA4247523B200F710F1 /* ODABaseInfoHeaderView.m */; };
+		D83DEAAB247612E600F710F1 /* ODAEventDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D83DEAA9247612E600F710F1 /* ODAEventDetailCell.m */; };
+		D83DEAAC247612E600F710F1 /* ODAEventDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D83DEAAA247612E600F710F1 /* ODAEventDetailCell.xib */; };
+		D83DEAB02476275200F710F1 /* UIColor+ODExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D83DEAAF2476275200F710F1 /* UIColor+ODExtension.m */; };
+		D83DEAB52476618200F710F1 /* ODAResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = D83DEAB42476618200F710F1 /* ODAResultView.m */; };
+		D83DEAB924766E6700F710F1 /* ODAResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D83DEAB724766E6700F710F1 /* ODAResultCell.m */; };
+		D83DEABA24766E6700F710F1 /* ODAResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D83DEAB824766E6700F710F1 /* ODAResultCell.xib */; };
+		D83DEABD24767C4E00F710F1 /* ODAPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = D83DEABC24767C4E00F710F1 /* ODAPopView.m */; };
+		D83DEAC22477662600F710F1 /* ODALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83DEAC02477662600F710F1 /* ODALoginViewController.m */; };
+		D83DEAC32477662600F710F1 /* ODALoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D83DEAC12477662600F710F1 /* ODALoginViewController.xib */; };
+		D83DEAC62477705100F710F1 /* ODAContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83DEAC52477705100F710F1 /* ODAContainerViewController.m */; };
+		D83DEAC9247770F700F710F1 /* ODAPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83DEAC8247770F700F710F1 /* ODAPageViewController.m */; };
+		D8AADA6124877FA100187D35 /* libOdinAnalysisSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AADA5E24877FA000187D35 /* libOdinAnalysisSDK.a */; };
+		D8AADA6224877FA100187D35 /* OdinDomainSecurity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AADA6024877FA000187D35 /* OdinDomainSecurity.framework */; };
+		D8AADA6824877FFE00187D35 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AADA6424877FFE00187D35 /* MBProgressHUD.m */; };
+		D8AADA6924877FFE00187D35 /* MBProgressHUD+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AADA6724877FFE00187D35 /* MBProgressHUD+Extension.m */; };
+		D8AADA6F2487804B00187D35 /* ODNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AADA6D2487804A00187D35 /* ODNavigationViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D833EEEE2474F7E20023ED44 /* 奥丁分析Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "奥丁分析Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D833EEF12474F7E20023ED44 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D833EEF22474F7E20023ED44 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D833EEF72474F7E20023ED44 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D833EEF82474F7E20023ED44 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D833EEFB2474F7E20023ED44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D833EEFD2474F7E40023ED44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D833EF002474F7E40023ED44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D833EF022474F7E40023ED44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D833EF032474F7E40023ED44 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D833EF0A2474FA0C0023ED44 /* ODAEvent.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ODAEvent.plist; sourceTree = "<group>"; };
+		D83DEA94247520A000F710F1 /* ODABaseInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODABaseInfoViewController.m; sourceTree = "<group>"; };
+		D83DEA95247520A000F710F1 /* ODABaseInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODABaseInfoViewController.h; sourceTree = "<group>"; };
+		D83DEA98247520B900F710F1 /* ODARegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODARegisterViewController.m; sourceTree = "<group>"; };
+		D83DEA99247520B900F710F1 /* ODARegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ODARegisterViewController.xib; sourceTree = "<group>"; };
+		D83DEA9A247520B900F710F1 /* ODARegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODARegisterViewController.h; sourceTree = "<group>"; };
+		D83DEA9E2475213700F710F1 /* ODADetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODADetailViewController.h; sourceTree = "<group>"; };
+		D83DEA9F2475213700F710F1 /* ODADetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODADetailViewController.m; sourceTree = "<group>"; };
+		D83DEAA3247523B200F710F1 /* ODABaseInfoHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODABaseInfoHeaderView.h; sourceTree = "<group>"; };
+		D83DEAA4247523B200F710F1 /* ODABaseInfoHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODABaseInfoHeaderView.m; sourceTree = "<group>"; };
+		D83DEAA62475260400F710F1 /* ODAnalysisHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODAnalysisHeader.h; sourceTree = "<group>"; };
+		D83DEAA8247612E600F710F1 /* ODAEventDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODAEventDetailCell.h; sourceTree = "<group>"; };
+		D83DEAA9247612E600F710F1 /* ODAEventDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODAEventDetailCell.m; sourceTree = "<group>"; };
+		D83DEAAA247612E600F710F1 /* ODAEventDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ODAEventDetailCell.xib; sourceTree = "<group>"; };
+		D83DEAAE2476275200F710F1 /* UIColor+ODExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ODExtension.h"; sourceTree = "<group>"; };
+		D83DEAAF2476275200F710F1 /* UIColor+ODExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ODExtension.m"; sourceTree = "<group>"; };
+		D83DEAB32476618200F710F1 /* ODAResultView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODAResultView.h; sourceTree = "<group>"; };
+		D83DEAB42476618200F710F1 /* ODAResultView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODAResultView.m; sourceTree = "<group>"; };
+		D83DEAB624766E6700F710F1 /* ODAResultCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODAResultCell.h; sourceTree = "<group>"; };
+		D83DEAB724766E6700F710F1 /* ODAResultCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODAResultCell.m; sourceTree = "<group>"; };
+		D83DEAB824766E6700F710F1 /* ODAResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ODAResultCell.xib; sourceTree = "<group>"; };
+		D83DEABB24767C4E00F710F1 /* ODAPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODAPopView.h; sourceTree = "<group>"; };
+		D83DEABC24767C4E00F710F1 /* ODAPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODAPopView.m; sourceTree = "<group>"; };
+		D83DEABF2477662600F710F1 /* ODALoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODALoginViewController.h; sourceTree = "<group>"; };
+		D83DEAC02477662600F710F1 /* ODALoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODALoginViewController.m; sourceTree = "<group>"; };
+		D83DEAC12477662600F710F1 /* ODALoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ODALoginViewController.xib; sourceTree = "<group>"; };
+		D83DEAC42477705100F710F1 /* ODAContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODAContainerViewController.h; sourceTree = "<group>"; };
+		D83DEAC52477705100F710F1 /* ODAContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODAContainerViewController.m; sourceTree = "<group>"; };
+		D83DEAC7247770F700F710F1 /* ODAPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODAPageViewController.h; sourceTree = "<group>"; };
+		D83DEAC8247770F700F710F1 /* ODAPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODAPageViewController.m; sourceTree = "<group>"; };
+		D8AADA5D24877FA000187D35 /* OdinAnalysisSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OdinAnalysisSDK.h; sourceTree = "<group>"; };
+		D8AADA5E24877FA000187D35 /* libOdinAnalysisSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOdinAnalysisSDK.a; sourceTree = "<group>"; };
+		D8AADA6024877FA000187D35 /* OdinDomainSecurity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OdinDomainSecurity.framework; sourceTree = "<group>"; };
+		D8AADA6424877FFE00187D35 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		D8AADA6524877FFE00187D35 /* MBProgressHUD+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Extension.h"; sourceTree = "<group>"; };
+		D8AADA6624877FFE00187D35 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		D8AADA6724877FFE00187D35 /* MBProgressHUD+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Extension.m"; sourceTree = "<group>"; };
+		D8AADA6D2487804A00187D35 /* ODNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODNavigationViewController.m; sourceTree = "<group>"; };
+		D8AADA6E2487804B00187D35 /* ODNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODNavigationViewController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D833EEEB2474F7E20023ED44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8AADA6224877FA100187D35 /* OdinDomainSecurity.framework in Frameworks */,
+				D8AADA6124877FA100187D35 /* libOdinAnalysisSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D833EEE52474F7E20023ED44 = {
+			isa = PBXGroup;
+			children = (
+				D833EEF02474F7E20023ED44 /* ODAnalysisSDKSample */,
+				D833EEEF2474F7E20023ED44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D833EEEF2474F7E20023ED44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D833EEEE2474F7E20023ED44 /* 奥丁分析Sample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D833EEF02474F7E20023ED44 /* ODAnalysisSDKSample */ = {
+			isa = PBXGroup;
+			children = (
+				D8AADA5B24877FA000187D35 /* SDK */,
+				D83DEABE2477660E00F710F1 /* Login */,
+				D83DEAB12476615300F710F1 /* Common */,
+				D83DEAAD2476273400F710F1 /* UItils */,
+				D83DEAA12475214E00F710F1 /* PageViewEvent */,
+				D83DEA9D247520F900F710F1 /* Event */,
+				D83DEA97247520B900F710F1 /* Register */,
+				D83DEA93247520A000F710F1 /* BaseInfo */,
+				D833EEF12474F7E20023ED44 /* AppDelegate.h */,
+				D833EEF22474F7E20023ED44 /* AppDelegate.m */,
+				D8AADA6E2487804B00187D35 /* ODNavigationViewController.h */,
+				D8AADA6D2487804A00187D35 /* ODNavigationViewController.m */,
+				D833EEF72474F7E20023ED44 /* ViewController.h */,
+				D833EEF82474F7E20023ED44 /* ViewController.m */,
+				D833EEFA2474F7E20023ED44 /* Main.storyboard */,
+				D833EEFD2474F7E40023ED44 /* Assets.xcassets */,
+				D833EEFF2474F7E40023ED44 /* LaunchScreen.storyboard */,
+				D833EF022474F7E40023ED44 /* Info.plist */,
+				D833EF032474F7E40023ED44 /* main.m */,
+				D833EF0A2474FA0C0023ED44 /* ODAEvent.plist */,
+				D83DEAA62475260400F710F1 /* ODAnalysisHeader.h */,
+			);
+			path = ODAnalysisSDKSample;
+			sourceTree = "<group>";
+		};
+		D83DEA93247520A000F710F1 /* BaseInfo */ = {
+			isa = PBXGroup;
+			children = (
+				D83DEAA22475235F00F710F1 /* ODABaseInfoHeaderView */,
+				D83DEA95247520A000F710F1 /* ODABaseInfoViewController.h */,
+				D83DEA94247520A000F710F1 /* ODABaseInfoViewController.m */,
+			);
+			path = BaseInfo;
+			sourceTree = "<group>";
+		};
+		D83DEA97247520B900F710F1 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				D83DEA9A247520B900F710F1 /* ODARegisterViewController.h */,
+				D83DEA98247520B900F710F1 /* ODARegisterViewController.m */,
+				D83DEA99247520B900F710F1 /* ODARegisterViewController.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		D83DEA9D247520F900F710F1 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				D83DEAA7247612B900F710F1 /* View */,
+				D83DEA9E2475213700F710F1 /* ODADetailViewController.h */,
+				D83DEA9F2475213700F710F1 /* ODADetailViewController.m */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		D83DEAA12475214E00F710F1 /* PageViewEvent */ = {
+			isa = PBXGroup;
+			children = (
+				D83DEAC42477705100F710F1 /* ODAContainerViewController.h */,
+				D83DEAC52477705100F710F1 /* ODAContainerViewController.m */,
+				D83DEAC7247770F700F710F1 /* ODAPageViewController.h */,
+				D83DEAC8247770F700F710F1 /* ODAPageViewController.m */,
+			);
+			path = PageViewEvent;
+			sourceTree = "<group>";
+		};
+		D83DEAA22475235F00F710F1 /* ODABaseInfoHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				D83DEAA3247523B200F710F1 /* ODABaseInfoHeaderView.h */,
+				D83DEAA4247523B200F710F1 /* ODABaseInfoHeaderView.m */,
+			);
+			path = ODABaseInfoHeaderView;
+			sourceTree = "<group>";
+		};
+		D83DEAA7247612B900F710F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D83DEAA8247612E600F710F1 /* ODAEventDetailCell.h */,
+				D83DEAA9247612E600F710F1 /* ODAEventDetailCell.m */,
+				D83DEAAA247612E600F710F1 /* ODAEventDetailCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D83DEAAD2476273400F710F1 /* UItils */ = {
+			isa = PBXGroup;
+			children = (
+				D83DEAAE2476275200F710F1 /* UIColor+ODExtension.h */,
+				D83DEAAF2476275200F710F1 /* UIColor+ODExtension.m */,
+			);
+			path = UItils;
+			sourceTree = "<group>";
+		};
+		D83DEAB12476615300F710F1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D83DEAB22476616100F710F1 /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D83DEAB22476616100F710F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8AADA6324877FFE00187D35 /* MBProgressHUD */,
+				D83DEAB32476618200F710F1 /* ODAResultView.h */,
+				D83DEAB42476618200F710F1 /* ODAResultView.m */,
+				D83DEAB624766E6700F710F1 /* ODAResultCell.h */,
+				D83DEAB724766E6700F710F1 /* ODAResultCell.m */,
+				D83DEAB824766E6700F710F1 /* ODAResultCell.xib */,
+				D83DEABB24767C4E00F710F1 /* ODAPopView.h */,
+				D83DEABC24767C4E00F710F1 /* ODAPopView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D83DEABE2477660E00F710F1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D83DEABF2477662600F710F1 /* ODALoginViewController.h */,
+				D83DEAC02477662600F710F1 /* ODALoginViewController.m */,
+				D83DEAC12477662600F710F1 /* ODALoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D8AADA5B24877FA000187D35 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				D8AADA5C24877FA000187D35 /* OdinAnalysisSDK */,
+				D8AADA5F24877FA000187D35 /* Require */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		D8AADA5C24877FA000187D35 /* OdinAnalysisSDK */ = {
+			isa = PBXGroup;
+			children = (
+				D8AADA5D24877FA000187D35 /* OdinAnalysisSDK.h */,
+				D8AADA5E24877FA000187D35 /* libOdinAnalysisSDK.a */,
+			);
+			path = OdinAnalysisSDK;
+			sourceTree = "<group>";
+		};
+		D8AADA5F24877FA000187D35 /* Require */ = {
+			isa = PBXGroup;
+			children = (
+				D8AADA6024877FA000187D35 /* OdinDomainSecurity.framework */,
+			);
+			path = Require;
+			sourceTree = "<group>";
+		};
+		D8AADA6324877FFE00187D35 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				D8AADA6424877FFE00187D35 /* MBProgressHUD.m */,
+				D8AADA6524877FFE00187D35 /* MBProgressHUD+Extension.h */,
+				D8AADA6624877FFE00187D35 /* MBProgressHUD.h */,
+				D8AADA6724877FFE00187D35 /* MBProgressHUD+Extension.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D833EEED2474F7E20023ED44 /* ODAnalysisSDKSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D833EF072474F7E40023ED44 /* Build configuration list for PBXNativeTarget "ODAnalysisSDKSample" */;
+			buildPhases = (
+				D833EEEA2474F7E20023ED44 /* Sources */,
+				D833EEEB2474F7E20023ED44 /* Frameworks */,
+				D833EEEC2474F7E20023ED44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ODAnalysisSDKSample;
+			productName = ODAnalysisSDKSample;
+			productReference = D833EEEE2474F7E20023ED44 /* 奥丁分析Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D833EEE62474F7E20023ED44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = odin;
+				TargetAttributes = {
+					D833EEED2474F7E20023ED44 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = D833EEE92474F7E20023ED44 /* Build configuration list for PBXProject "ODAnalysisSDKSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D833EEE52474F7E20023ED44;
+			productRefGroup = D833EEEF2474F7E20023ED44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D833EEED2474F7E20023ED44 /* ODAnalysisSDKSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D833EEEC2474F7E20023ED44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83DEAAC247612E600F710F1 /* ODAEventDetailCell.xib in Resources */,
+				D833EF012474F7E40023ED44 /* LaunchScreen.storyboard in Resources */,
+				D833EEFE2474F7E40023ED44 /* Assets.xcassets in Resources */,
+				D83DEA9C247520BA00F710F1 /* ODARegisterViewController.xib in Resources */,
+				D833EF0B2474FA0C0023ED44 /* ODAEvent.plist in Resources */,
+				D833EEFC2474F7E20023ED44 /* Main.storyboard in Resources */,
+				D83DEABA24766E6700F710F1 /* ODAResultCell.xib in Resources */,
+				D83DEAC32477662600F710F1 /* ODALoginViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D833EEEA2474F7E20023ED44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83DEAB02476275200F710F1 /* UIColor+ODExtension.m in Sources */,
+				D83DEABD24767C4E00F710F1 /* ODAPopView.m in Sources */,
+				D83DEA96247520A000F710F1 /* ODABaseInfoViewController.m in Sources */,
+				D83DEAA5247523B200F710F1 /* ODABaseInfoHeaderView.m in Sources */,
+				D83DEAAB247612E600F710F1 /* ODAEventDetailCell.m in Sources */,
+				D83DEAA02475213700F710F1 /* ODADetailViewController.m in Sources */,
+				D833EEF92474F7E20023ED44 /* ViewController.m in Sources */,
+				D833EEF32474F7E20023ED44 /* AppDelegate.m in Sources */,
+				D83DEAB52476618200F710F1 /* ODAResultView.m in Sources */,
+				D8AADA6F2487804B00187D35 /* ODNavigationViewController.m in Sources */,
+				D83DEAC9247770F700F710F1 /* ODAPageViewController.m in Sources */,
+				D83DEAC22477662600F710F1 /* ODALoginViewController.m in Sources */,
+				D833EF042474F7E40023ED44 /* main.m in Sources */,
+				D83DEAC62477705100F710F1 /* ODAContainerViewController.m in Sources */,
+				D83DEAB924766E6700F710F1 /* ODAResultCell.m in Sources */,
+				D83DEA9B247520BA00F710F1 /* ODARegisterViewController.m in Sources */,
+				D8AADA6824877FFE00187D35 /* MBProgressHUD.m in Sources */,
+				D8AADA6924877FFE00187D35 /* MBProgressHUD+Extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D833EEFA2474F7E20023ED44 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D833EEFB2474F7E20023ED44 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D833EEFF2474F7E40023ED44 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D833EF002474F7E40023ED44 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D833EF052474F7E40023ED44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D833EF062474F7E40023ED44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D833EF082474F7E40023ED44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVSH9W54D7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ODAnalysisSDKSample/SDK/ThridParty",
+					"$(PROJECT_DIR)/ODAnalysisSDKSample/SDK/Require",
+				);
+				INFOPLIST_FILE = ODAnalysisSDKSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ODAnalysisSDKSample/SDK/OdinAnalysisSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.odin.ODAnalysisSDKSample;
+				PRODUCT_NAME = "奥丁分析Sample";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D833EF092474F7E40023ED44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVSH9W54D7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ODAnalysisSDKSample/SDK/ThridParty",
+					"$(PROJECT_DIR)/ODAnalysisSDKSample/SDK/Require",
+				);
+				INFOPLIST_FILE = ODAnalysisSDKSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ODAnalysisSDKSample/SDK/OdinAnalysisSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.odin.ODAnalysisSDKSample;
+				PRODUCT_NAME = "奥丁分析Sample";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D833EEE92474F7E20023ED44 /* Build configuration list for PBXProject "ODAnalysisSDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D833EF052474F7E40023ED44 /* Debug */,
+				D833EF062474F7E40023ED44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D833EF072474F7E40023ED44 /* Build configuration list for PBXNativeTarget "ODAnalysisSDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D833EF082474F7E40023ED44 /* Debug */,
+				D833EF092474F7E40023ED44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D833EEE62474F7E20023ED44 /* Project object */;
+}
