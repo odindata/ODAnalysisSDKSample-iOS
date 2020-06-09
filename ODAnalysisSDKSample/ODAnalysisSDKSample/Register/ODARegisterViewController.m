@@ -62,7 +62,7 @@
         @"nick_name":self.nickNameTextFiled.text,
     };
     [[NSUserDefaults standardUserDefaults] setObject:self.accountTextField.text forKey:@"userAccount"];
-    [[NSUserDefaults standardUserDefaults] setObject:self.nickNameTextFiled forKey:@"nickName"];
+    [[NSUserDefaults standardUserDefaults] setObject:self.nickNameTextFiled.text forKey:@"nickName"];
     
     [OdinAnalysisSDK trackEvent:@"user_register" param:registerParm];
     
